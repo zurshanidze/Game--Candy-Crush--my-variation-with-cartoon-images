@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    height: fit-content;
+    /*   background: black; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("https://img.freepik.com/free-vector/beautiful-garden-cartoon-background-illustration-with-a-landscape-nature-of-plant-and-green-grass_2175-4302.jpg?w=2000")
+        /*   background: url("https://i.pinimg.com/originals/08/d9/bf/08d9bfdca1310ea445596a6fc30a1633.jpg") */
+        /*   background-image: url("data:image/jpeg;base64,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") */
+        /*   background-image: url("https://wallpaperfordesktop.com/wp-content/uploads/2021/11/Nature-Backgrounds.jpg")
+    background: url("https://cdn.wallpapersafari.com/6/16/BVyYH7.jpg") */
+        /*     background:url("https://c4.wallpaperflare.com/wallpaper/412/921/132/tv-video-games-computers-food-room-fish-dogs-fish-tank-stuffed-animals-gamers-sisters-anime-anime-gi-animals-dogs-hd-art-wallpaper-preview.jpg") */
+}
+
+.grid {
+    height: 272px;
+    width: 272px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: none;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    /*   border:2px solid green; */
+    background: rgba(25, 59, 168, 0.8)
+}
+
+.grid div {
+    display: flex;
+    height: 25px;
+    width: 25px;
+    border-radius: 17px;
+    margin: 2px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.grid div:hover,
+.grid div:focus {
+    cursor: pointer;
+}
+
+.score-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: fit-content;
+    margin: 10px;
+    padding: 0px 50px;
+    /*   border:2px solid rgb(162, 174, 232); */
+    border-radius: 10px;
+    background: rgba(59, 227, 65, 0.8);
+}
+
+h3 {
+    margin-bottom: 0px;
+    margin-top: 19px;
+}
+
+h1 {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 22px 0;
+}
+
+@media (min-width:700px) {
+    .grid {
+        height: 632px;
+        width: 632px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: none;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 15px;
+        /*   border:2px solid green; */
+        background: rgba(25, 59, 168, 0.8)
+    }
+
+    .grid div {
+        display: flex;
+        height: 70px;
+        width: 70px;
+        border-radius: 17px;
+        margin: 2px;
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .score-board {
+        background: rgba(212, 191, 214, 0.6);
+    }
+}
+
+@media (max-width:700px) and (min-width:520px) {
+    .grid {
+        height: 472px;
+        width: 472px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: none;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 15px;
+        /*   border:2px solid green; */
+        background: rgba(25, 59, 168, 0.8)
+    }
+
+    .grid div {
+        display: flex;
+        height: 50px;
+        width: 50px;
+        border-radius: 17px;
+        margin: 2px;
+        position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+
+/* background */
+/* https://www.google.com/search?q=animation+game+wallpaper&tbm=isch&ved=2ahUKEwjHz6GdiOT4AhXO8LsIHSpDDioQ2-cCegQIABAA&oq=animation+game+wallpaper&gs_lcp=CgNpbWcQAzIECAAQEzIECAAQEzIICAAQHhAHEBM6BAgjECc6BggAEB4QBzoICAAQHhAIEAdQpgpYmRJg9xNoAHAAeACAAdEBiAHsBpIBBTAuNS4xmAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=NmXFYsfcNM7h7_UPqoa50AI&bih=686&biw=1440#imgrc=kZusVuFb-n4n6M */
